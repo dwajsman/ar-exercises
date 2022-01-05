@@ -1,5 +1,6 @@
 class Store < ActiveRecord::Base
-  belongs_to :store
+  # belongs_to :store
+  has_many :employees
   validates :name, presence: true
   validates :annual_revenue, numericality: { only_integer: true }
   validates :mens_apparel, inclusion: [true, false]
@@ -13,4 +14,4 @@ end
 # Validators
 # https://edgeguides.rubyonrails.org/active_record_validations.html
 
-    # validates :games_played, numericality: { only_integer: true }
+# validates :games_played, numericality: { only_integer: true }
