@@ -30,4 +30,23 @@ yaletown = Store.create(
   )
 
 
-@mens_stores = 
+@mens_stores = Store.where(mens_apparel: true)
+
+@mens_stores.each { |x| 
+  puts ""
+  puts x.name 
+  puts x.annual_revenue
+}
+puts ""
+
+@womens_apparel = Store.where(womens_apparel: true).where('annual_revenue < :ar', ar: 1000000 )
+# User.where("id > :id", id: 100)
+# in https://stackoverflow.com/questions/11317662/rails-using-greater-than-less-than-with-a-where-statement/63019591#63019591
+
+@womens_apparel.each { |x| 
+  puts ""
+  puts x.name 
+  puts x.annual_revenue
+}
+puts ""
+
