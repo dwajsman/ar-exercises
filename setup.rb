@@ -9,6 +9,10 @@ ActiveRecord::Base.logger = Logger.new(STDOUT)
 puts 'Establishing connection to database ...'
 ActiveRecord::Base.establish_connection(
   adapter: 'postgresql',
+  # database: 'fgsykvao',
+  # username: 'fgsykvao',
+  # password: 'OkwuFIxenz91YWNmzFJfPRQ-R1R3xGnk',
+  # host: 'kashin.db.elephantsql.com',
   database: 'ar_exercises',
   username: 'username',
   password: 'postgres',
@@ -18,7 +22,8 @@ ActiveRecord::Base.establish_connection(
   encoding: 'unicode',
   min_messages: 'error'
 )
-
+# postgres://fgsykvao:OkwuFIxenz91YWNmzFJfPRQ-R1R3xGnk@kashin.db.elephantsql.com/fgsykvao
+# EDITED!
 puts 'CONNECTED'
 
 puts 'Setting up Database (recreating tables) ...'
