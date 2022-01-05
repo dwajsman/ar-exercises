@@ -27,23 +27,23 @@ puts "----------"
 burnaby = Store.create(
   name: "Burnaby",
   annual_revenue: 300000,
-  apparel_men: true,
-  apparel_women: true
+  mens_apparel: true,
+  womens_apparel: true
   )
 
-richmond = Store.create(
-  name: "Richmond",
-  annual_revenue: 1260000,
-    apparel_men: false,
-  apparel_women: true
-  )
+# richmond = Store.create(
+#   name: "Richmond",
+#   annual_revenue: 1260000,
+#     apparel_men: false,
+#   apparel_women: true
+#   )
 
-gastown = Store.create(
-  name: "Gastown",
-  annual_revenue: 190000,
-  apparel_men: true,
-  apparel_women: false
-  )
+# gastown = Store.create(
+#   name: "Gastown",
+#   annual_revenue: 190000,
+#   apparel_men: true,
+#   apparel_women: false
+#   )
 
-puts Store.count
+# puts Store.count
 # puts Store.find_by(name: 'Burnaby')
