@@ -11,7 +11,7 @@ ActiveRecord::Base.establish_connection(
   adapter: 'postgresql',
   # database: 'fgsykvao',
   # username: 'fgsykvao',
-  # password: 'OkwuFIxenz91YWNmzFJfPRQ-R1R3xGnk',
+  # password: 'reset',
   # host: 'kashin.db.elephantsql.com',
   database: 'ar_exercises',
   username: 'username',
